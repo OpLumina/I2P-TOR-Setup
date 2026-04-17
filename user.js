@@ -1,5 +1,5 @@
 // ============================================================
-// PROXY — Override Tor, route through I2P HTTP proxy instead
+// (PROXY) Override Tor, route through I2P HTTP proxy instead
 // ============================================================
 user_pref("network.proxy.type", 1);
 user_pref("network.proxy.http", "127.0.0.1");
@@ -11,15 +11,14 @@ user_pref("network.proxy.allow_hijacking_localhost", false);
 user_pref("network.proxy.failover_timeout", 0);
 
 // ============================================================
-// DISABLE TOR LAUNCHER, USE I2P PROXY INSTEAD
+// USE I2P PROXY INSTEAD OF TOR LAUNCHER
 // ============================================================
 user_pref("extensions.torlauncher.start_tor", false);
 user_pref("extensions.torlauncher.prompt_at_startup", false);
 user_pref("extensions.torbutton.use_nontor_proxy", true);
 
 // ============================================================
-// DNS — prefetch disable not guaranteed by Tor Browser base
-// when not using a SOCKS proxy
+// Other stuff
 // ============================================================
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
